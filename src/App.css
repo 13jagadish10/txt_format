@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.6px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    box-sizing: border-box;
+    background-color: #dce1fc;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transition: all .5s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ptr{
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.header{
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 5%;
+    background-color: black;
+    color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+    background-color: #fff;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto;
+    max-width: 850px;
+    min-height: 90vh;
+    width: 95%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 50px;
+}
+.nav{
+    flex-wrap: wrap;
+    max-width: 800px!important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav button{
+    background-color: #0707a7;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 5px;
+    padding: 7px 10px;
+    transition: all 0.3s;
+}
+button:active{
+    transform: scale(1.05);
+}
+.box{
+    border: 1px solid gray;
+    font-size: 15px;
+    max-width: 550px;
+    min-height: 250px;
+    padding: 7px 10px;
+    width: 95%;
+}
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: grey;
+    flex-wrap: wrap;
+    margin-top: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    text-align: center;
+}
+code{
+    color: white;
+}
+.dark {
+    background-color: #000058;
+    color: #fff;
+}
+.dark #root .container, .dark #root .container .box {
+    background-color: blue;
+    color: #fff;
 }
